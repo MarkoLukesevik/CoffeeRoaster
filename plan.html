@@ -1,0 +1,260 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="plan.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+</head>
+
+<body>
+
+  <nav class="width90">
+    <img src="assets/shared/desktop/logo.svg">
+    <img id="ham" onclick="hamburger()" src="assets/shared/mobile/icon-hamburger.svg">
+    <div class="large">
+      <ul class="list">
+        <li><a class="list-item" href="index.html">Home</a></li>
+        <li><a class="list-item" href="about.html">About</a></li>
+        <li><a class="list-item" href="plan.html">Create your plan</a></li>
+      </ul>
+    </div>
+
+    <div class="small flexCC column">
+      <img class="logo absolute" src="assets/shared/desktop/logo.svg">
+      <ul class="list small-list column textCenter">
+        <li><a onclick="hamburger()" class="list-item small-list-item" href="index.html">Home</a></li>
+        <li><a onclick="hamburger()" class="list-item small-list-item" href="about.html">About</a></li>
+        <li><a onclick="hamburger()" class="list-item small-list-item" href="plan.html">Create your plan</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="plan-hero" class="width90 flexCC">
+    <div class="plan-hero-content flexCC column">
+      <h1>Create a plan</h1>
+      <p>Build a subscription plan that best fits your needs. We offer an assortment of the best 
+        artisan coffees from around the globe delivered fresh to your door.</p>
+    </div>
+  </section>
+
+  <section id="steps" class="width90">
+    <div class="path relative">
+      <div class="circle circle1 absolute"></div>
+      <div class="line line1 relative"></div>
+      <div class="circle circle2 absolute"></div>
+      <div class="line line2 relative"></div>
+      <div class="circle circle3 absolute"></div>
+    </div>
+    <div class="steps-cards flexCC">
+      <div class="steps-card flexCC column">
+        <h1>01</h1>
+        <h3>Pick your <br>coffee</h2>
+        <p>Select from our evolving range of artisan coffees. Our beans are ethically 
+          sourced and we pay fair prices for them. There are new coffees in all profiles 
+          every month for you to try out.</p>
+      </div>
+
+      <div class="steps-card flexCC column">
+        <h1>02</h1>
+        <h3>Choose the frequency</h2>
+        <p>Customize your order frequency, quantity, even your roast style and grind type. 
+          Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+      </div>
+
+      <div class="steps-card flexCC column">
+        <h1>03</h1>
+        <h3>Receive and enjoy!</h2>
+        <p> We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+           world-class coffees curated to provide a distinct tasting experience.</p>
+      </div>
+  </div>
+  </section>
+ 
+  <section id="pay" class="width90 flexCC">
+    <div class="pay-sidebar">
+      <div class="div">
+        <h4>01</h4>
+        <h4>Preferences</h4>
+      </div>
+      <div class="div">
+        <h4>02</h4>
+        <h4>Bean type</h4>
+      </div>
+      <div class="div">
+        <h4>03</h4>
+        <h4>Quantity</h4>
+      </div>
+      <div class="div">
+        <h4>04</h4>
+        <h4>Grind option</h4>
+      </div>
+      <div class="div">
+        <h4>05</h4>
+        <h4>Deliveries</h4>
+      </div>
+    </div>
+    <div class="pay-steps">
+      <div class="pay-step">
+        <div class="pay-step-header flexCC">
+          <h2>How do you drink your coffee?</h2>
+          <img onclick="arrow(this)" class="arrow1" src="assets/plan/desktop/icon-arrow.svg">
+        </div>
+        <div id="drink" class="pay-cards flexCC">
+          <div onclick="summary(this, capsule, coffee1, coffee2)" class="pay-card first-row flexCC column">
+            <h4 id="capsule">Capsule</h4>
+            <p>Compatible with Nespresso systems and similar brewers</p>
+          </div>
+
+          <div onclick="summary(this, filter, coffee1, coffee2)" class="pay-card first-row flexCC column">
+            <h4 id="filter">Filter</h4>
+            <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+          </div>
+
+          <div onclick="summary(this, espresso, coffee1, coffee2)" class="pay-card first-row flexCC column">
+            <h4 id="espresso">Espresso</h4>
+            <p>Dense and finely ground beans for an intense, flavorful experience</p>
+          </div>
+        </div>
+
+        <div class="pay-step">
+          <div class="pay-step-header flexCC">
+            <h2> What type of coffee?</h2>
+            <img onclick="arrow1(this, type)" class="arrow" src="assets/plan/desktop/icon-arrow.svg">
+          </div>
+          <div id="type" class="pay-cards hidden flexCC">
+            <div onclick="summary(this, single, type1, type2)" class="pay-card second-row flexCC column">
+              <h4 id="single">Single origin</h4>
+              <p>Distinct, high quality coffee from a specific family-owned farm</p>
+            </div>
+  
+            <div onclick="summary(this, decaf, type1, type2)" class="pay-card second-row flexCC column">
+              <h4 id="decaf">Decaf</h4>
+              <p>Just like regular coffee, except the caffeine has been removed</p>
+            </div>
+  
+            <div onclick="summary(this, blended, type1, type2)" class="pay-card second-row flexCC column">
+              <h4 id="blended">Blended</h4>
+              <p>Combination of two or three dark roasted beans of organic coffees</p>
+            </div>
+          </div>
+
+          <div class="pay-step">
+            <div class="pay-step-header flexCC">
+              <h2>How much would you like?</h2>
+              <img onclick="arrow1(this, much)" class="arrow" src="assets/plan/desktop/icon-arrow.svg">
+            </div>
+            <div id="much" class="pay-cards hidden flexCC">
+              <div onclick="summary(this, lowAmount, much1, much2)" class="pay-card third-row flexCC column">
+                <h4 id="lowAmount">250g</h4>
+                <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+              </div>
+    
+              <div onclick="summary(this, mediumAmount, much1, much2)" class="pay-card third-row  flexCC column">
+                <h4 id="mediumAmount">500g</h4>
+                <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+              </div>
+    
+              <div onclick="summary(this, largeAmount, much1, much2)" class="pay-card third-row  flexCC column">
+                <h4 id="largeAmount">1000g</h4>
+                <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+              </div>
+            </div>
+
+            <div class="pay-step">
+              <div class="pay-step-header flexCC">
+                <h2>Want us to grind them?</h2>
+                <img id="arrow" onclick="arrow1(this, grind)" class="arrow" src="assets/plan/desktop/icon-arrow.svg">
+              </div>
+              <div id="grind" class="pay-cards hidden flexCC">
+                <div onclick="summary(this, wholebean, grind1, grind2)" class="pay-card fourth-row  flexCC column">
+                  <h4 id="wholebean">Wholebean</h4>
+                  <p>Best choice if you cherish the full sensory experience</p>
+                </div>
+      
+                <div onclick="summary(this, Filter, grind1, grind2)" class="pay-card fourth-row flexCC column">
+                  <h4 id="Filter">Filter</h4>
+                  <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                </div>
+      
+                <div onclick="summary(this, cafetiere, grind1, grind2)" class="pay-card fourth-row flexCC column">
+                  <h4 id="cafetiere">Cafetiére</h4>
+                  <p>Course ground beans specially suited for french press coffee</p>
+                </div>
+              </div>
+
+              <div class="pay-step">
+                <div class="pay-step-header flexCC">
+                  <h2>How often should we deliver?</h2>
+                  <img onclick="arrow1(this, deliver)" class="arrow" src="assets/plan/desktop/icon-arrow.svg">
+                </div>
+                <div id="deliver" class="pay-cards hidden flexCC">
+                  <div onclick="summary(this, everyWeek, deliver1, deliver2)" class="pay-card fifth-row flexCC column">
+                    <h4 id="everyWeek">Every week</h4>
+                    <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                  </div>
+        
+                  <div onclick="summary(this, twoWeeks, deliver1, deliver2)" class="pay-card fifth-row flexCC column">
+                    <h4 id="twoWeeks">Every 2 weeks</h4>
+                    <p>$17.25 per shipment. Includes free priority shipping.</p>
+                  </div>
+        
+                  <div onclick="summary(this, everyMonth, deliver1, deliver2)" class="pay-card fifth-row flexCC column">
+                    <h4 id="everyMonth">Every month</h4>
+                    <p>$22.50 per shipment. Includes free priority shipping.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="order" class="order flexCC column">
+            <p>Order Summary</p>
+            <h4>“I drink my coffee <div id="as"></div> <span id="order-coffee">_____,</span> with a <span id="order-type">_____</span>
+                type of bean. <span id="order-much">_____.</span> <div id="ground">ground ala</div> <span id="order-grind">_____,</span>
+                 sent to me <span id="order-deliver">_____.”</span></h4>
+        </div>
+        
+        <button class="create-plan" onclick="renderModal()"><a href="#plan-hero">Create my plan!</a></button>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-header flexCC">
+        <h2>Order Summary</h2>
+    </div>
+    <div class="modal-content flexCC column width90">
+        <h4>“I drink my coffee <div id="modal-as"></div> <span id="modal-coffee">_____,</span> with a <span id="modal-type">_____</span>
+          type of bean. <span id="modal-much">_____.</span> <div id="modal-ground">ground ala</div> <span id="modal-grind">_____,</span>
+           sent to me <span id="modal-deliver">_____.”</span></h4>
+        <p>Is this correct? You can proceed to checkout or go back to plan selection if something 
+          is off. Subscription discount codes can also be redeemed at the checkout.</p>
+    </div>
+    <div class="modal-sum flexCC width90">
+        <h3 class="checkout"><span id="price">$_____</span>/month</h3>
+        <button onclick="renderModal()" class="checkout" id="checkout">Checkout</button>
+        <button onclick="renderModal()" id="checkout-small">Ckeckout - <span id="price-small-screen">$_____</span> / mo</button>
+    </div>
+  </div>
+
+
+
+  <footer class="width90">
+    <div class="footer-nav flexCC">
+      <img class="footer-logo" src="assets/shared/desktop/logo.svg">
+      <ul class="list">
+      <li><a class="list-item" href="#hero">Home</a></li>
+      <li><a class="list-item" href="about.html">About us</a></li>
+      <li><a class="list-item" href="plan.html">Create your plan</a></li>
+    </ul>
+    </div>
+    
+  <div class="footer-img flexCC">
+    <img class="footer-icon" src="assets/shared/desktop/icon-facebook.svg">
+    <img class="footer-icon" src="assets/shared/desktop/icon-twitter.svg">
+    <img class="footer-icon" src="assets/shared/desktop/icon-instagram.svg">
+  </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

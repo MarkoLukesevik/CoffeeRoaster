@@ -1,0 +1,171 @@
+
+#about-hero{
+    width: 90%;
+    margin: 0 auto;
+    height: 450px;
+    background-image: url(assets/about/desktop/image-hero-whitecup.jpg);
+    background-size: cover;
+    background-position: center center;
+    justify-content: flex-start;
+}
+.about-us{
+    margin-left: 10%;
+    width: 40%;
+    align-items: flex-start;
+}
+
+#commitment{
+    height: 520px;
+    margin: 150px auto 100px;
+    gap: 40px;
+}
+.commitment-content{
+    align-items: flex-start;
+    gap: 20px;
+}
+.commitment-content h2{
+    color: #333D4B;
+}
+.commitment-content p {
+    color: #333D4B;
+}
+
+#quality{
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.quality-content{
+    height: 70%;
+    width: 100%;
+    bottom: 0;
+    background-image: url(assets/about/desktop/bg-quality.png);
+    justify-content: flex-start;
+}
+.quality-text{
+    margin-left: 4%;
+    width: 40%;
+    align-items: flex-start;
+    gap: 20px;
+}
+.quality-img{
+    z-index: 1;
+    background-image: url(assets/about/desktop/image-quality.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 474px;
+    width: 445px;
+    border-radius: 8px;
+    right: 5%;
+}
+
+#headquarters{
+    width: 70%;
+    margin: 100px 10%;
+}
+#headquarters h4{
+   color: #83888F; 
+   text-align: left;
+   margin-bottom: 50px;
+}
+.locations{
+    width: 100%;
+    justify-content: space-between;
+}
+.location{
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.location p{
+    color: #333D4B;
+}
+
+
+@media only screen and (max-width: 992px) {
+    #about-hero{
+        background-image: url(assets/about/tablet/image-hero-whitecup.jpg);
+    }
+    .about-us{
+        width: 55%;
+    }
+    .commitment-img{
+        width: 281px;
+        height: 470px;
+    }
+
+    #quality{
+        height: 650px;
+    }
+    .quality-text{
+        margin: 0 auto;
+        margin-top: 130px;
+        width: 70%;
+        align-items: center;
+        text-align: center;
+    }
+    .quality-img{
+        background-image: url(assets/about/tablet/image-quality.jpg);
+        width: 90%;
+        height: 320px;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about-hero{
+        background-image: url(assets/about/mobile/image-hero-whitecup.jpg);
+    }
+    .about-us{
+        margin: 0 auto;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #commitment{
+        margin-top: 300px;
+        flex-direction: column;
+    }
+    .commitment-content{
+        align-items: center;
+        text-align: center;
+    }
+    .commitment-img{
+        width: 327px;
+        height: 400px;
+    }
+    #quality{
+        margin: 300px auto 100px;
+        height: 850px;
+        
+    }
+    .quality-text h2 {
+        font-size: 32px;
+    }
+    .quality-text p {
+        padding-bottom: 30px;
+    }
+   
+    .quality-img{
+        background-image: url(assets/about/mobile/image-quality.jpg);
+    }
+
+
+    #headquarters{
+        width: 90%;
+        margin: 0 auto 100px;
+    }
+    #headquarters h4{
+        text-align: center;
+    }
+    .locations{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .location{
+        align-items: center;
+        justify-content: center;
+    }
+}

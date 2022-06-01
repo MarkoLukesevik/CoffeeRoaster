@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+</head>
+<body>
+    <nav class="width90">
+      <img src="assets/shared/desktop/logo.svg">
+      <img id="ham" onclick="hamburger()" src="assets/shared/mobile/icon-hamburger.svg">
+      <div class="large">
+        <ul class="list">
+          <li><a class="list-item" href="#hero">Home</a></li>
+          <li><a class="list-item" href="about.html">About</a></li>
+          <li><a class="list-item" href="plan.html">Create your plan</a></li>
+        </ul>
+      </div>
+
+      <div class="small flexCC column">
+        <img class="logo absolute" src="assets/shared/desktop/logo.svg">
+        <ul class="list small-list column textCenter">
+          <li><a onclick="hamburger()" class="list-item small-list-item" href="#hero">Home</a></li>
+          <li><a onclick="hamburger()" class="list-item small-list-item" href="about.html">About</a></li>
+          <li><a onclick="hamburger()" class="list-item small-list-item" href="plan.html">Create your plan</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero" class="flexCC width90">
+      <div class="hero-content flexCC column">
+          <h1>Great coffee made simple.</h1>
+          <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+            coffees from our best roasters delivered directly to your door, at your schedule.</p>
+            <button class="hero-button"><a href="plan.html">Create your plan</a></button>
+      </div>
+    </section>
+
+    <section id="collection" class="width80 relative">
+      <div class="collection-bg textCenter absolute">our collection</div>
+
+      <div class="cards width80 relative flexCC">
+        <div class="card flexCC column">
+          <img src="assets/home/desktop/image-gran-espresso.png" class="card-img">
+          <div class="card-content flexCC column">
+            <h4>Gran Espresso</h4>
+            <p>Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+          </div>
+        </div>
+
+        <div class="card flexCC column">
+          <img src="assets/home/desktop/image-planalto.png" class="card-img">
+          <div class="card-content flexCC column">
+            <h4>Planalto</h4>
+            <p class="textCenter">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+          </div>
+        </div>
+
+        <div class="card flexCC column">
+          <img class="card-img" src="assets/home/desktop/image-piccollo.png">
+          <div class="card-content flexCC column">
+            <h4>Piccollo</h4>
+            <p class="textCenter">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+          </div>
+        </div>
+     
+
+      <div class="card flexCC column">
+        <img src="assets/home/desktop/image-danche.png" class="card-img">
+        <div class="card-content flexCC column">
+          <h4>Danche</h4>
+          <p class="textCenter">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="choose" class="width90 relative">
+      <div class="choose-header flexCC textCenter">
+        <div class="choose-header-content absolute">
+          <h2>Why choose us?</h2>
+          <p class="textCenter">A large part of our role is choosing which particular coffees will be featured 
+            in our range. This means working closely with the best coffee growers to give 
+            you a more impactful experience on every level.</p>
+        </div>
+        <div class="choose-cards flexCC textCenter absolute">
+            <div class="choose-card flexCC column">
+              <img class="choose-img" src="assets/home/desktop/icon-coffee-bean.svg">
+              <div class="choose-card-content flexCC column">
+                <h4>Best quality</h4>
+                <p class="width80">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            </div>
+            </div>
+
+            <div class="choose-card flexCC column">
+              <img class="choose-img" src="assets/home/desktop/icon-gift.svg">
+              <div class="choose-card-content flexCC column">
+                <h4>Exclusive benefits</h4>
+                <p class="width80">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+              </div>
+            </div>
+
+            <div class="choose-card flexCC column">
+              <img class="choose-img" src="assets/home/desktop/icon-truck.svg">
+              <div class="choose-card-content flexCC column">
+                <h4>Free shipping </h4>
+                <p class="width80">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="works" class="width80 relative">
+        <h4>How it works</h4>
+        <div class="path relative">
+          <div class="circle circle1 absolute"></div>
+          <div class="line line1 relative"></div>
+          <div class="circle circle2 absolute"></div>
+          <div class="line line2 relative"></div>
+          <div class="circle circle3 absolute"></div>
+        </div>
+        <div class="works-cards flexCC">
+          <div class="works-card flexCC column">
+            <h1>01</h1>
+            <h3>Pick your <br>coffee</h2>
+            <p>Select from our evolving range of artisan coffees. Our beans are ethically 
+              sourced and we pay fair prices for them. There are new coffees in all profiles 
+              every month for you to try out.</p>
+          </div>
+
+          <div class="works-card flexCC column">
+            <h1>02</h1>
+            <h3>Choose the frequency</h2>
+            <p>Customize your order frequency, quantity, even your roast style and grind type. 
+              Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+          </div>
+
+          <div class="works-card flexCC column">
+            <h1>03</h1>
+            <h3>Receive and enjoy!</h2>
+            <p> We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+               world-class coffees curated to provide a distinct tasting experience.</p>
+          </div>
+      </div>
+
+      <button class="create"><a href="plan.html">Create your plan</a></button>
+    </section>
+
+    <footer class="width90">
+      <div class="footer-nav flexCC">
+        <img class="footer-logo" src="assets/shared/desktop/logo.svg">
+        <ul class="list">
+        <li><a class="list-item" href="#hero">Home</a></li>
+        <li><a class="list-item" href="about.html">About us</a></li>
+        <li><a class="list-item" href="plan.html">Create your plan</a></li>
+      </ul>
+      </div>
+      
+    <div class="footer-img flexCC">
+      <img class="footer-icon" src="assets/shared/desktop/icon-facebook.svg">
+      <img class="footer-icon" src="assets/shared/desktop/icon-twitter.svg">
+      <img class="footer-icon" src="assets/shared/desktop/icon-instagram.svg">
+    </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
